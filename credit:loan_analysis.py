@@ -254,7 +254,7 @@ print(classification_report(Y_test, y_pred))
 # Interest Rate Distribution Analysis: The data also showcases that most borrowers acquire a conventional loan with an interest rate range between 6 to 7%, along with a prominent rate 6.4%. The lower end of the chart represents borrowers who were able to secure relatively more favorable rates due to stronger credit profiles; while higher risk borrowers received less favorable interest rates.
 
 
-# LTV Distribution Analysis: According to the chart, there are approximately 30k+ borrowers at each of the two spikes (80-97%) highlighting PMI requirements and elevated risk exposure at these thresholds. The 80% LTV represents borrowers who put down exactly 20% while the higher percentages are comprised of borrowers who made lower down payments.
+# LTV Distribution Analysis: According to the chart, there are approximately 30k+ borrowers at each of the two spikes (80%) and (95%-97%) highlighting PMI requirements and elevated risk exposure at these thresholds. The 80% LTV represents borrowers who put down exactly 20% while the higher percentages are comprised of borrowers who made lower down payments.
 
 
 
