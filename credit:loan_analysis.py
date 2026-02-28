@@ -238,3 +238,44 @@ print(classification_report(Y_test, y_pred))
 
 
 
+
+
+
+
+
+## EDA: 
+
+# Credit Score Distribution Analysis: This data highlights how Freddie Mac's portfolio mainly targets low-risk profiles with higher credit scores (700+), which aligns with their conventional loan requirements.
+
+
+# DTI Ratio Distribution Analysis: The vast majority of Freddie Mac's borrowers fall into the DTI range of (28-50%) with the highest concentration between (38-47%). The data shows no loans above 51% in this dataset, suggesting Freddie Mac maintains strict DTI standards in their underwriting process. 
+
+
+# Interest Rate Distribution Analysis: The data also showcases that most borrowers acquire a conventional loan with an interest rate range between 6 to 7%, along with a prominent rate 6.4%. The lower end of the chart represents borrowers who were able to secure relatively more favorable rates due to stronger credit profiles; while higher risk borrowers received less favorable interest rates.
+
+
+# LTV Distribution Analysis: According to the chart, there are approximately 30k+ borrowers at each of the two spikes (80-97%) highlighting PMI requirements and elevated risk exposure at these thresholds. The 80% LTV represents borrowers who put down exactly 20% while the higher percentages are comprised of borrowers who made lower down payments.
+
+
+
+
+
+## SQL Queries 
+
+# Loan Purpose Analysis: 
+
+# AVG Loan by State Analysis: Across the DMV, Virginia has the most loans from Freddie Mac (4,635) with an average loan amount of $386,706 and an LTV of 73%, indicating borrowers put approximately 27% down.  DC has the fewest loans (226) with the highest average unpaid balance of $495,991 due to increased home prices and cost of living. MD falls in the middle with an average unpaid balance of $393.999 and has the highest average LTV in the region (76.3%) which implies that they are slightly more leveraged.
+
+# Loan Purpose Analysis: Out of the 165,007 loan dataset from Freddie Mac, Purchase borrowers represent a significant portion of total loans originated (129,749) with an average credit score of 760 and an average DTI of 37.8%. Cash-out refinance borrowers carry the highest interest rates (6.83%) and lowest credit scores (728) which classifies them as higher risk profiles. No cash out refinance borrowers have the lowest DTI (36.1%) and lowest interest rate (6.40) which indicates that these borrowers are simply aiming to secure better terms.
+
+# High Risk Profile Analysis: Out of the 165,007 loans analyzed, there are 313 borrowers that carry an average interest rate of 6.96% due to a poor average credit score (645) which is indicative of higher rates. These loans include an average loan amount of $356,262 and an average LTV of 95.3 which further extends risks and implies lower down payments. Furthermore, PMI will be required for such borrowers to mitigate lender risks in the event of a default.
+
+# High LTV Loan Analysis: Across the DMV region, VA leads with the most high ltv loan originations (969) and falls in the middle in terms of the average ltv (95.2) and the average loan amount ($435,392). DC has the fewest high ltv loans (50) yet has the highest average loan amount of $571,920, demonstrating that lower down payments lead to increased principal amounts. MD (771 high LTV loans) has the smallest average loan amount ($426,562) and the highest average LTV (95.5), implying that MD borrowers make the lowest down payments in the region.
+
+
+
+
+## Predictive Model Analysis: 
+
+#This model was used to predict high risk borrowers using credit score, DTI, LTV, interest rate, and loan amounts. The model identified normal loans with 100% accuracy: however, it had a lower recall on high risk loans because they are so rare in the dataset since only 313 out of the 165,007 loans (0.19%) meet all three high risk criteria. In a lending environment, improving recall would be the main priority to mitigate potential losses for the lender.
+
