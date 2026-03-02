@@ -262,7 +262,6 @@ print(classification_report(Y_test, y_pred))
 
 ## SQL Queries 
 
-# Loan Purpose Analysis: 
 
 # AVG Loan by State Analysis: Across the DMV, Virginia has the most loans from Freddie Mac (4,635) with an average loan amount of $386,706 and an LTV of 73%, indicating borrowers put approximately 27% down.  DC has the fewest loans (226) with the highest average unpaid balance of $495,991 due to increased home prices and cost of living. MD falls in the middle with an average unpaid balance of $393.999 and has the highest average LTV in the region (76.3%) which implies that they are slightly more leveraged.
 
